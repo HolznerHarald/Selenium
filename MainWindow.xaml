@@ -1,0 +1,35 @@
+﻿<Window x:Class="Selenium.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Selenium"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <Button x:Name="WerteAbfragen" Click="WerteAbfragen_Click" Content="aktuelle Werte abfragen"/>
+            <Button x:Name="AndersAbfragen" Click="AndersAbfragen_Click" Content="aktuelle Änderungs-Werte abfragen"/>            
+            <Button x:Name="Hilfs" Click="Hilfs_Click" Content="Hilfsprogramm for Id,Name"/>
+            <Button x:Name="B11" Content="Darunter Testprogrammen"/>
+            <Button x:Name="B1" Click="Button_Click_1" Content="Bsp1"/>
+            <Button x:Name="B2" Click="Button_Click_2" Content="Bsp2"/>
+            <Button x:Name="B3" Click="Button_Click_3" Content="Bsp3"/>
+            <Button x:Name="B4" Click="Button_Click_4" Content="Bsp4"/>
+            <Button x:Name="B5" Click="Button_Click_5" Content="Bsp5"/>
+            <Button x:Name="B6" Click="Button_Click_6" Content="Id's suchen "/>
+            <Button x:Name="B7" Click="Button_Click_7" Content="aktuelle Werte"/>
+            <Button x:Name="B8" Click="Button_Click_8" Content="Zeitformat"/>
+            <Button x:Name="B9" Click="PopUpTest1" Content="PopUp Test1"/>
+            <Button x:Name="B10" Click="PopUpTest2" Content="PopUp Unterseiten schliessen"/>
+        </StackPanel>
+        <TextBox  Grid.Row="1" x:Name="Ausgabe" VerticalScrollBarVisibility="Auto"
+                     HorizontalScrollBarVisibility="Auto"
+                     IsReadOnly="True"
+                     Margin="5"/>
+    </Grid>
+</Window>
